@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.lineicons.com/3.0/lineicons.css' rel='stylesheet'> <!-- Link for Line Icons -->
+    <link rel="stylesheet" href="style.css">
+    <title>AIIA</title>
+    <title>AIIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <a href="#" class="brand">
+              <!-- Replace 'path/to/your/logo.png' with the actual path to your image -->
+              <img src="aiia-logo-left.jpg" alt="Logo" style="height: 50px;">
+              <img src="aiia-logo-right.png" alt="Logo2" style="height: 60px">
+            </a>
+        </div>
+
+        <nav class="navbar-menu">
+          
+            <ul>
+                <li><a href="#" onclick="showSection('home-section')">Home</a></li>
+                <li><a href="#" onclick="showSection('about-section')">About</a></li>
+                <li><a href="#" onclick="showSection('ug-section')">UG Syllabus</a></li>
+                <li><a href="#" onclick="showSection('pg-section')">PG Syllabus</a></li>
+                <li><a href="#" onclick="showSection('register-section')">Register</a></li>
+                <li><a href="#" onclick="showSection('results-section')">Results</a></li> <!-- Results Tab -->
+                <li> 
+                    <a href="#" onclick="showSection('profile-section')">
+                        <div class="profile-picture"></div> <!-- Add this line -->
+                    </a>
+                </li>
+                </ul>
+              </nav>
+    </header>
+    
+
+    <section id="register-section" class="data-section">
+        <h3>Register</h3>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="principal">Principal</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </section>  
+
+    <section id="login-section" class="data-section">
+        <h3>Login</h3>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+
+    <main class="dashboard-content">
+        
+        <!-- Home Section -->
+        <section id="home-section" class="data-section" style="display: block;">
+            <h2>Welcome to AIIA Dashboard!</h2>
+            <div class="marquee-text highlighted-text">
+                <span>Welcome to the All India Institute of Ayurveda's online dashboard. Explore the UG and PG sections for detailed information.</span>
+            </div>
+
+            <div class="container">
+            </div>
+            <!-- Three Sections Below Marquee -->
+            <div class="dashboard-sections">
+                <div class="dashboard-section">
+                    <h3>ESTABLISHMENT</h3>
+                    <ul style="text-align: centre;">
+                        <li>The All India Institute of Ayurveda has been conceived as an Apex Institute for Ayurveda. It aims at bringing a synergy between Traditional Wisdom of Ayurveda and Modern tools and technology. The institute would offer postgraduate and doctoral courses in various disciplines of Ayurveda and will focus on fundamental research of Ayurveda, drug development, standardization, quality control, safety evaluation and scientific validation of Ayurvedic medicine. Institute has a 200 bed referral hospital for facilitating clinical research. The Institute has 25 Specialty Departments and 12 clinics with 8 inter-disciplinary research laboratories wherein several Scholars have access for PG & Ph.D programs every year. The hospital is equipped with state of the art modern diagnostic tools and techniques which is used in teaching, training and research. The patient care is done primarily through Ayurveda of tertiary level. This institute also has an international collaborative centre for global promotion and research in Ayurveda.</li>
+                    </ul>
+                </div>
+                <div class="dashboard-section">
+                    <ul style="text-align: centre;">
+                    <h3>ORIGIN OF AYURVEDA</h3>
+                    <li>Ayurveda is considered as one of the ancient health care system. The antique vedic texts have scattered references of Ayurvedic Remedies and allied aspects of medicine and health. Atharva-veda mainly deals with extensive Ayurvedic information. That is why Ayurveda is said to be the off shoot of Atharva Veda. Ayurveda is the system of medicine that evolved in India with a rationale logical foundation and it has survived as a distinct entity from remote antiquity to the present day. The fundamentals on which the Ayurvedic system is based are essentially true for all times and do not change from are to age. These are based on human actors, on intrinsic causes. The origin of Ayurveda is attributed to Atharva Veda where mention is made several diseases with their treatments. Later, from the 6th Century BC to 7th Century AD there was systematic development of the science and it is called Samhita period, when a number of classical works were produced by several authors and during this period there is evidence of organized medical care.</li>
+                </div>
+                <div class="dashboard-section">
+                    <h3>BRANCHES OF AYURVEDA</h3>
+                    <li>The Ayurvedic classics describe eight well-developed clinical branches of Ayurveda:</li>
+                    <ul style="text-align: left;">
+                        <li>Kaya Chikitsa - Medicine</li>
+                        <li>Shalya Tantra - Surgery</li>
+                        <li>Shalakya Tantra - ENT and Ophthalmology</li>
+                        <li>Kaumarbhritya - Pediatrics and Obstetrics</li>
+                        <li>Agad Tantra - Toxicology</li>
+                        <li>Bhut Vidya - Psychiatry</li>
+                        <li>Rasayan - Rejuvenation therapy and geriatrics</li>
+                        <li>Vajikaran - Sexology</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="data-section">
+            <h2>About AIIA</h2>
+            <p>The All India Institute of Ayurveda has been conceived as an Apex Institute for Ayurveda. It aims at bringing a synergy between Traditional Wisdom of Ayurveda and Modern tools and technology. The institute would offer postgraduate and doctoral courses in various disciplines of Ayurveda and will focus on fundamental research of Ayurveda, drug development, standardization, quality control, safety evaluation, and scientific validation of Ayurvedic medicine. Institute has a 200 bed referral hospital for facilitating clinical research. The Institute has 25 Specialty Departments and 12 clinics with 8 interdisciplinary research laboratories wherein several Scholars have access for PG & Ph.D. programs every year. The hospital is equipped with state of the art modern diagnostic tools and techniques which are used in teaching, training, and research. The patient care is done primarily through Ayurveda of tertiary level. This institute also has an international collaborative center for global promotion and research in Ayurveda.</p>
+        </section>
+
+        <!-- UG Section -->
+        <section id="ug-section" class="data-section">
+            <h3>UG Section</h3>
+            <div class="tabs">
+                <!-- Each button is assigned a specific PDF file -->
+                <button class="tab-button active" onclick="openPDF('1st_year_UG_Syllabus.pdf')">1st Professional</button>
+                <button class="tab-button" onclick="openPDF('2nd_year_UG_Syllabus.pdf')">2nd Professional</button>
+                <button class="tab-button" onclick="openPDF('3rd_year_syllabus.pdf')">3rd Professional</button>
+                <button class="tab-button" onclick="openPDF('4th_year_syllabus.pdf')">4th Professional</button>
+            </div>
+        
+            <!-- Container to display the selected PDF -->
+            <div id="pdf-display" style="margin-top: 20px;">
+                <!-- PDFs will be displayed here -->
+            </div>
+        </section>
+            <script>
+            // Function to display the selected PDF in the pdf-display area
+            function openPDF(pdfFile) {
+                // Get the PDF display container
+                const pdfDisplay = document.getElementById('pdf-display');
+            
+                // Check if the container is found
+                if (!pdfDisplay) {
+                    console.error('PDF display container not found.');
+                    return;
+                }
+            
+                // Set the inner HTML of the container to display the selected PDF in an iframe
+                pdfDisplay.innerHTML = `
+                    <iframe src="${pdfFile}" width="100%" height="600px" style="border: none;">
+                        This browser does not support PDFs. Please download the PDF to view it: 
+                        <a href="${pdfFile}">Download PDF</a>.
+                    </iframe>
+                `;
+            }
+            </script>
+            
+        
+
+        <!-- PG Section -->
+        <section id="pg-section" class="data-section">
+            <h3>PG Section</h3>
+            <iframe src="aiia pg syllabus.pdf" width="100%" height="600px" style="border: none;">
+            </iframe>
+        </section>
+
+        
+
+        <!-- Results Section -->
+        <section id="results-section" class="data-section" style="display: none;">
+            <h3>View Results</h3>
+            <form>
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="extc">Electronics & Telecommunication (EXTC)</option>
+                    <option value="comps">Computer Science (COMPS)</option>
+                    <option value="it">Information Technology (IT)</option>
+                    <option value="biomed">Biomedical Engineering</option>
+                    <option value="cmpn">Mechanical Engineering (CMPN)</option>
+                </select>
+
+                <select id="division" required>
+                    <option value="">Select Division</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+
+                <select id="student" required>
+                    <option value="">Select Student</option>
+            <!-- Students will be populated dynamically based on division selection -->
+                </select>
+
+                <select id="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+
+                <button type="button" id="viewResultBtn">View Result</button>
+            </form>
+
+    <!-- Display Results Here -->
+            <div id="resultDisplay" style="margin-top: 20px;"></div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h4>Contact Information</h4>
+            <p>All India Institute of Ayurveda (AllA)</p>
+            <p>Mathura Road, Gautam Puri</p>
+            <p>Sarita Vihar, Delhi-1100/6</p>
+            <p>Phone No: 011-26950401/402</p>
+            <p>Email id: <a href="mailto:contact-us@aiia.gov.in">contact-us@aiia.gov.in</a></p>
+            <p>For Hospital Related Queries: <a href="mailto:hospital-admin@aiia.gov.in">hospital-admin@aiia.gov.in</a></p>
+        </section>
+        
+
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.data-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function openTab(evt, tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.style.display = 'none');
+
+            // Remove the 'active' class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            // Show the selected tab content and set the button as active
+            document.getElementById(tabName).style.display = 'block';
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Set the default tab to be active
+        document.getElementById('ug-1st').style.display = 'block';
+    </script>
+
+</body>
+</html>

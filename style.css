@@ -1,0 +1,343 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background image container */
+.container {
+    background-image: url('bg.jpg'); /* Relative path from css to images */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    margin-bottom: 20px; /* Space between image and next section */
+}
+
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.navbar-brand img {
+    height: 20px; /* Adjust height as needed */
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    margin: 0px;
+    padding: 5px;
+}  
+
+
+/* Navbar Styles */
+header.navbar {
+    background-color: #5c9f0b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.9s;
+    position:sticky;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand .brand {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu ul li {
+    margin-right: 30px;
+}
+
+.navbar-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-menu ul li a:hover {
+    background-color: #0033287a;
+    color: #FFFDE7;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Registration Form Styles */
+#register-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+#register-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#registerForm input, #registerForm select, #registerForm button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#registerForm button {
+    background-color: #8ba10d;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#registerForm button:hover {
+    background-color: #7a8e0a;
+}
+
+/* Data Section */
+.data-section {
+    display: none;
+    padding: 20px;
+}
+
+.data-section{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.data-section h3 {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #1E88E5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab-button.active, .tab-button:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+    font-family: 'Nunito', sans-serif;
+}
+
+.notification .num {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF5252;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.search-form .search-btn {
+    background-color: #1E88E5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-form .search-btn:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+    font-family: 'Nunito', sans-serif;
+}
+
+.dashboard-section {
+    border: 2px solid #ccc; /* Border color and thickness */
+    padding: 15px; /* Space inside the box */
+    margin: 10px 0; /* Space outside the box */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000000; /* Background color */
+    font-family: "Nunito", sans-serif;
+}
+
+
+    .data-section {
+        font-weight:lighter;
+        display: none;
+    }
+    
+    .highlighted-text {
+        background-color: rgba(255, 4, 4, 0.825);
+        padding: 5px;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        font-family: "Nunito", sans-serif;
+    }
+    
+    .marquee-text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 0px;
+        font-family: "Nunito", sans-serif;
+    }
+    
+    .marquee-text span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+    
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+    }
+
+    .dashboard-sections {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-weight: lighter;
+        font-family: "Nunito", sans-serif;
+    }
+
+    .dashboard-section {
+        flex: 1;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        margin: 0 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .dashboard-section h4 {
+        margin-bottom: 15px;
+    }
+
+    /* Contact Information Section */
+    .contact-info {
+        margin-top: 20px; /* Space above the section */
+        padding: 20px; /* Space inside the section */
+        background-color: #f4f4f4; /* Light background color */
+        border-radius: 8px; /* Rounded corners */
+        text-align: center; /* Centered text */
+    }
+
+    .contact-info h4 {
+        font-size: 1.5rem; /* Font size for the heading */
+        margin-bottom: 15px; /* Space below the heading */
+        color: #333; /* Darker color for the heading */
+    }
+
+    .contact-info p {
+        margin: 5px 0; /* Space around each paragraph */
+        font-size: 1rem; /* Font size for the text */
+        color: #555; /* Text color */
+    }
+
+    .contact-info a {
+        color: #1E88E5; /* Link color */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+
+/* Contact Information Section */
+.contact-info {
+    margin-top: 20px; /* Space above the section */
+    padding: 20px; /* Space inside the section */
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+
+
+
+.contact-info h4 {
+    font-size: 1.5rem; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space around each paragraph */
+    font-size: 1rem; /* Font size for the text */
+    color: #555; /* Text color */
+}
+
+.contact-info a {
+    color: #000000; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.text-box {
+    border: 2px solid #1E88E5; /* Border color */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f4f4f4; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 20px 0; /* Space around the box */
+    color: #333; /* Text color */
+    font-family: "Nunito", sans-serif;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky; /* Add this line */
+    top: 50%; /* Add this line */
+    transform: translateY(-50%); /* Add this line */
+  }
